@@ -1,5 +1,6 @@
 # author: Gökmen DEMİR
 # Web For Pentester 2 Authentication Exp2 için
+# 1. ve 3. print satırlarını silebilirsiniz.
 import requests
 referansList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 url = "http://192.168.126.130/authentication/example2/"
