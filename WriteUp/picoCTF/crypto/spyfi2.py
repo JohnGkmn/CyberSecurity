@@ -3,13 +3,13 @@ import socket
 import string
 import re
 from multiprocessing.pool import ThreadPool
-
+import time
 charset = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ '
 
 def attempt(tag, payload, block_number=0):
     s = socket.socket()
-    s.connect(('2018shell2.picoctf.com', 30399))
-
+    s.connect(('2018shell.picoctf.com', 33893))
+    time.sleep(1)
     # Assert length
     '''
     message = """Agent,
@@ -63,6 +63,7 @@ def main(progress='', block_number=0):
 
             async_result = pool.apply_async(attempt, (ch, payload, block_number))
             async_results.append(async_result)
+            time.sleep(1)
             
         # That 16th character is the first character of your secret. 
         # You can then repeat the process by putting 14 characters and then
@@ -70,7 +71,7 @@ def main(progress='', block_number=0):
         for async_result in async_results:
             ch, result = async_result.get()
             print("Result: {}, {} == {}".format(ch,result,aim))
-
+            time.sleep(1)
             if result == aim:
                 progress += ch
                 if ch == '}':
