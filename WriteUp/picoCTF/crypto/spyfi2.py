@@ -69,18 +69,18 @@ def main(progress='', block_number=0):
         # finding the second secret characters with the same thechnique.
         for async_result in async_results:
             ch, result = async_result.get()
-            print(f"Result: {ch}, {result} == {aim}")
+            print("Result: {}, {} == {}".format(ch,result,aim))
 
             if result == aim:
                 progress += ch
                 if ch == '}':
                     # end of flag! if we continue we
                     # merely get '0's added forever
-                    print(f"Success! {progress}")
+                    print("Success! {}".format(progress))
                     quit()
                 break
 
-        print(f"Progress (Block {block_number} of index {skip}): {progress}")
+        print("Progress (Block {} of index {}): {}".format(block_number,skip,progress))
 
     # continue to next block
     main(progress, block_number + 1)
