@@ -4,7 +4,7 @@ import string
 import re
 from multiprocessing.pool import ThreadPool
 import time
-charset = '0123456789abcdefghijklmnopqrstuvwxyzCFT$@_{}'
+charset = 'picoCTF{@g3nt_1$hl02456789abdefjkmqrsuvwxyz}'
 
 def attempt(tag, payload, block_number=0):
     s = socket.socket()
