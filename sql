@@ -7,3 +7,6 @@
    bu kullanılabilir */
    
    a'='a
+
+Veritabanındaki Kolon Sayısının Tespiti
+1′ UNION SELECT 1,2 # 
