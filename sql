@@ -6,4 +6,4 @@
    açıklamalar için
    bu kullanılabilir */
    
-   
+   a'='a
