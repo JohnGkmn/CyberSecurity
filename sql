@@ -10,3 +10,6 @@
 
 Veritabanındaki Kolon Sayısının Tespiti
 1′ UNION SELECT 1,2 # 
+
+Veritabanının Versiyon Bilgisi
+1′ UNION SELECT version(),2 # 
