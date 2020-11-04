@@ -1,1 +1,1 @@
-Linux üzerine bir takım çalışmalar ve notlar
+# Linux üzerine bir takım çalışmalar ve notlar
